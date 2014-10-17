@@ -35,7 +35,7 @@ class ACF_Field_Group_Widget extends WP_Widget {
                 <?php
                 /* Get all of the available ACF Field Groups */
                 $field_groups = get_pages(array (
-                    'post_type'    => 'acf',
+                    'post_type'    => 'acf-field-group',
                 ));
                 /* List the field groups in our select options */
                 foreach ( $field_groups as $field_group ) {
